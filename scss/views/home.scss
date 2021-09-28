@@ -1,0 +1,137 @@
+
+/* INDEX */
+
+/* Sección principal */
+main
+{
+    margin-top: 6rem;
+}
+.section__indexArticle{
+    font-size: 1em;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    h2 
+    {
+        font-size: 1.5em;
+        color: $primary;
+    }
+    .textoArticulo 
+    {
+        margin-bottom: 0.5rem;
+        line-height: 2.5em;
+        text-align: justify;
+        display: inline-block;
+        width: 100%; 
+    }
+    .indexImage2
+    {
+        width:  20vw;
+        height: 20vh;
+        margin-top: 4rem;
+    }
+    .picture2Index
+    {   
+        @extend .indexImage2;
+        margin-right: 1.5rem;
+    }
+    & picture img
+    {
+        width:  20vw;
+        height: 20vh;
+        border-radius: $borderRadius - 7px;
+        max-width: $genWidth / 3;
+        box-sizing: border-box;
+    }
+}
+
+
+
+
+
+
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 1230px) {
+
+
+    iframe{
+        width: 40vw;
+        height: 30vh;
+    }
+}
+@media only screen and (max-width: 992px) {
+    body{
+        font-family: $main-font-family;
+        background-color: $back-letter;
+        margin: 0 0.5rem;
+        padding: 0 1rem;
+        width: 100%;
+        overflow-x: hidden;
+        display: grid;
+        grid-template-areas: 
+        "header1"
+        "article"
+        "article2"
+        "article3"
+        "aside"
+        "footer";
+        grid-template-rows: 45vh auto auto auto auto 13vh;
+        grid-template-columns: 1fr;
+        row-gap: 2rem;
+        
+        justify-content: stretch;
+    }
+
+    header{
+        height: 30vh;
+    }
+
+
+    main{
+        margin-top: 4rem;
+    }
+
+    .row{
+        display: block;
+    }
+
+    .indexArticle
+    {
+        margin-top: 2rem;
+    }
+
+    iframe{
+        width: 95%;
+    }
+    .indexImage2
+    {
+        width:  100vw;
+        height: 20vh;
+        margin-top: 2rem;
+    }
+    .picture2Index
+    {   
+        width:  100vw;
+        height: 20vh;
+        margin-right: 1.5rem;
+    }
+
+    .section__indexArticle picture img 
+    {
+        width:  auto;
+        height: auto;
+        justify-content: center;
+        padding-left: 2rem;
+        max-width: 500px;
+    }
+
+    .sidebar
+    {
+        margin-left: 0;
+        padding: 0;
+    }
+
+
+}

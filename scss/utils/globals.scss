@@ -1,0 +1,97 @@
+/* estilo general del cuerpo */
+
+html{
+
+    font-size: 62,5%;
+    word-spacing: 0.3em;
+    letter-spacing: 0.03em;
+}
+
+body{
+    font-family: $main-font-family;
+    background-color: rgba(250, 249, 249, 0.965);
+    margin: 0 0.5rem;
+    padding: 0 1rem;
+    width: 100%;
+    overflow-x: hidden;
+    display: grid;
+    grid-template-areas: 
+    "header1 header1"
+    "article aside"
+    "article2 aside"
+    "article3 aside"
+    "footer footer";
+    grid-template-rows: 45vh auto auto auto 13vh;
+    grid-template-columns: 2fr 1fr;
+    row-gap: 2rem;
+    column-gap: 1rem;
+    justify-content: stretch;
+}
+
+.section    {
+
+    border-top: black;
+    border-top-width: 0;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    border-style: solid;
+    box-sizing: border-box;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    grid-area: article;
+  
+}
+
+
+
+iframe {
+
+    width: 18vw;
+    height: 25vh;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    margin-left: 1.5rem;
+    border-radius: 3px;
+}
+
+
+/* formato sidebar contratos destacados*/
+
+.sidebar{
+    margin-left: 2rem;
+    box-sizing: border-box;
+    display: inline-block;
+    background-color: $back-letter;
+    padding: 1rem;
+    border-radius: $borderRadius - 7px;
+    height: 70%;
+    grid-area: aside;
+    margin-top: 6rem;
+    & h3
+    {
+        color: $primary;
+        font-weight: bold;
+        text-align: center;
+    }
+    &:hover{
+        background-color: $secondary;
+        transform: scale(1.1,1.1);
+    }
+    & div dl dt a {
+
+        text-decoration: none;
+        color: $primary;
+        font-weight: bold;
+    }
+    .conDest 
+    {
+        padding: 1rem;
+        & dt 
+        {
+            padding: 0.5rem;
+        }
+    }
+}
+

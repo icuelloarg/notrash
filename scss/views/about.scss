@@ -1,0 +1,157 @@
+/* NOSOTROS */
+
+/* Mision, Vision, Valores */
+
+.nosotros
+{
+    margin-top: 4rem;
+    display: flex;
+    h2 
+    {
+        color: $primary;
+        font-size: 1.5em;
+        margin: 1em;
+    }
+    p
+    {
+    line-height: 2rem;
+    padding: 1rem;
+    text-align: justify;
+    }
+    picture img
+    {
+        max-width: 400px;
+        margin-top: 7rem;
+    }
+
+}
+
+.nosotros2
+{
+    display: flex;
+    flex-direction: row-reverse;
+    h2 
+    {
+        color: $primary;
+        font-size: 1.5em;
+        margin: 1em;
+    }
+    p
+    {
+    line-height: 2rem;
+    padding: 1rem;
+    text-align: justify;
+    }
+    picture img
+    {
+        max-width: 400px;
+        margin-top: 7rem;
+    }
+
+}
+
+.articleGrid1{
+    grid-area: article;
+}
+
+.articleGrid2{
+    grid-area: article2;
+}
+
+.articleGrid3{
+    grid-area: article3;
+}
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 1400px) {
+
+    .nosotros
+    {
+        display: flex;
+        flex-direction: column;
+        picture img 
+        {
+            width: 80vw;
+            max-width: none;
+            margin-top: 1rem;
+        }
+    }
+
+    .nosotros2
+    {
+        display: flex;
+        flex-direction: column;
+        picture img 
+        {
+            width: 80vw;
+            max-width: none;
+            margin-top: 1rem;
+        }
+    }
+}
+@media only screen and (max-width: 992px) {
+    body{
+        grid-template-areas: 
+        "header1"
+        "article"
+        "article2"
+        "article3"
+        "aside"
+        "footer";
+        grid-template-rows: 45vh auto auto auto auto 13vh;
+        grid-template-columns: 1fr;
+        row-gap: 2rem;
+    }
+
+    header{
+        height: 30vh;
+    }
+
+
+    main{
+        margin-top: 4rem;
+    }
+
+    .row{
+        display: block;
+    }
+
+    .indexArticle
+    {
+        margin-top: 2rem;
+    }
+
+    iframe{
+        width: 95%;
+    }
+    .indexImage2
+    {
+        width:  100vw;
+        height: 20vh;
+        margin-top: 2rem;
+    }
+    .picture2Index
+    {   
+        width:  100vw;
+        height: 20vh;
+        margin-right: 1.5rem;
+    }
+
+    .section__indexArticle picture img 
+    {
+        width:  auto;
+        height: auto;
+        justify-content: center;
+        padding-left: 2rem;
+        max-width: 500px;
+    }
+
+    .sidebar
+    {
+        margin-left: 0;
+        padding: 0;
+    }
+
+
+}

@@ -1,0 +1,103 @@
+/* VENDER */
+
+/* Info de la sección y avisos de venta */
+
+.titulos {
+
+    color: $primary;
+    margin: 0.5rem;
+    font-size: 1.5em;
+}
+
+.articuloVender p {
+
+    line-height: 2rem;
+}
+
+.tableGeneric{
+    margin-top: 2rem;
+    border-radius: 0.5rem;
+    border-collapse: collapse;
+    border: $primary 3px solid;
+    background-color: $secondary;
+}
+
+
+
+.avisosVenta    {
+
+    color: $primary;
+    font-size: 1.5em;
+    margin-bottom: 1.5rem;
+    margin-left: 1rem;
+}
+
+article table {
+
+    border-radius: 0.3rem;
+    margin-left: 1rem;
+}
+
+.tablaVendedores th {
+
+    color: $primary;
+    font-weight: bold;
+    padding: 1rem;
+}    
+
+article table tr td {
+
+ padding: 1rem;
+
+}
+
+.sectionGen2 {
+    display: flex;
+    align-items: center;
+    text-align: justify;
+}
+
+.genArticle {
+    width: 55%;
+}
+
+/* Formulario de venta */
+
+.sidebar1{
+    grid-area: aside;
+}
+
+.formulario1:hover{
+    background-color: $secondary;
+}
+
+.formulario1 {
+    padding: 1rem;
+}
+
+
+main section aside form div {
+
+    margin: 1em;
+}
+
+.tituloForm {
+    color: $primary;
+    margin-bottom: 1.5rem;
+}
+
+.segundoForm{
+    color: $primary;
+}
+
+.sectionGen {
+    display: flex;
+}
+
+.generic1{
+    width: 70%;
+}
+
+.elemento{
+    width: 100%;
+}

@@ -1,0 +1,66 @@
+/* Header, logo y navBar */
+
+header
+{
+    background-image: url(../MULTIMEDIA/Reduce-reuse-recycle-e1531902642428.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    box-sizing: border-box;
+    height: 35rem;
+    border-radius: 0.3rem;
+    grid-area: header1;
+    position: relative;
+
+        .d-block
+        {
+            height: 25rem;;
+        }
+
+        .header__dataDiv__dataTable
+        /* Estilo de tabla de datos generales presente en header */
+        {
+            width: 100%;
+            align-items: center;
+            text-align: center;
+            font-size: 1.5em;
+            background-image: linear-gradient(to bottom, #1b7340, #2e7f4c, #3f8b58, #4f9765, #5ea372, #6eae7e, #7db88a, #8cc397, #9fcfa6, #b1dcb5, #c4e8c5, #d6f5d5);
+            color: whitesmoke;
+            height: 3.5rem;
+            border-radius: 0.5rem;
+
+        }
+        .header__logo
+        {
+            position: absolute; top: 4rem;
+                & picture img 
+                {
+                    width: 50%;
+                    margin-top: 3.8rem;
+                    margin-left: 2rem;
+                    border-radius: 50%;
+                    animation-duration: 2s;
+                    animation-name: fadeLogo;
+                }
+        }   
+}
+/*NavBar*/
+.navbar
+{
+    border-radius: 0.5rem !important;
+    background-color: #1B7340 !important; 
+        & div div ul li a 
+        {
+            color: $back-letter !important;
+            font-size: 1.3em !important;
+                &:hover
+                {
+                    background-color: $secondgradient;
+                    border-radius: 0.3rem;
+                }
+        }
+        .dropdown-menu
+        {
+            background-color: #1B7340 !important;
+        }
+}

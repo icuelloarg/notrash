@@ -1,0 +1,686 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,400;0,500;1,300&display=swap');
+
+
+/* Definición de parámetros generales */
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* estilo general del cuerpo */
+
+html{
+
+    font-size: 62,5%;
+    word-spacing: 0.3em;
+    letter-spacing: 0.03em;
+}
+
+body{
+    font-family: 'Urbanist', sans-serif;
+    background-color: rgba(250, 249, 249, 0.965);
+    margin: 0 0.5rem;
+    padding: 0 1rem;
+    width: 100%;
+    overflow-x: hidden;
+    display: grid;
+    grid-template-areas: 
+    "header1 header1"
+    "article aside"
+    "article2 aside"
+    "article3 aside"
+    "footer footer";
+    grid-template-rows: 60vh auto auto auto 13vh;
+    grid-template-columns: 2fr 1fr;
+    row-gap: 2rem;
+    column-gap: 1rem;
+    justify-content: stretch;
+}
+
+.section    {
+
+    border-top: black;
+    border-top-width: 0;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    border-style: solid;
+    box-sizing: border-box;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    margin-top: 1.5rem;
+    padding-top: 2rem;
+    grid-area: article;
+  
+}
+
+/* Header, logo y navBar */
+
+header{
+
+    background-image: url(../MULTIMEDIA/Reduce-reuse-recycle-e1531902642428.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    box-sizing: border-box;
+    height: 35rem;
+    border-radius: 0.3rem;
+    grid-area: header1;
+    position: relative;
+}
+
+.d-block{
+    height: 25rem;
+}
+
+.header__dataDiv__dataTable
+/* Estilo de tabla de datos generales presente en header */
+{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5em;
+    background-image: linear-gradient(to bottom, #1b7340, #2e7f4c, #3f8b58, #4f9765, #5ea372, #6eae7e, #7db88a, #8cc397, #9fcfa6, #b1dcb5, #c4e8c5, #d6f5d5);
+    color: whitesmoke;
+    height: 3.5rem;
+    border-radius: 0.5rem;
+        
+}
+
+/* Logo */
+
+.header__logo{
+    position: absolute; top: 4rem;
+}
+
+header div picture img {
+
+      width: 50%;
+      margin-top: 3.8rem;
+      margin-left: 2rem;
+      border-radius: 50%;
+      animation-duration: 2s;
+      animation-name: fadeLogo;
+    
+       
+}
+
+
+
+/* barra de navegación con menú desplegable */
+
+
+.navbar{
+    border-radius: 0.5rem !important;
+   
+}
+
+
+.bg-light{
+    background-color: #1B7340 !important; 
+}
+
+
+
+.navbar div div ul li a {
+    color: whitesmoke !important;
+    font-size: 1.3em !important;
+}
+
+.navbar div div ul li a:hover{
+    background-color: #72B384;
+    border-radius: 0.3rem;
+}
+
+.dropdown-menu{
+    background-color: #1B7340;
+}
+
+/* nav
+{
+    width: 100%;
+    height: 10%;
+    text-align: right;
+    margin-top: 2rem;
+}
+
+.enlace{
+    text-align: center;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+
+.nav2{
+    
+    background-color: #1B7340;
+    color: whitesmoke;
+    display: inline-block;
+    font-size: 1.5em;
+    padding: 0.7rem;
+    border-radius: 1rem 1rem 0.3rem 0.3rem;
+    text-align: center;
+}
+
+header div nav > ul > li > a
+{
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 1.5rem;
+    position: relative;
+    
+}
+
+header div nav > ul > li:hover{
+    background-color: #72B384;
+}
+
+.subNav1{
+    display: none;
+    font-size: 0.7em;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.subNav{
+    position: absolute;
+    margin-top: 1rem;
+}
+
+header div nav > ul > li:hover .subNav1{
+    display: block;
+    inline-size: 1rem;
+    margin-top: 0.5rem;
+    background-color: #1B7340;
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+    border-radius: 0.5rem;
+}
+
+header div nav > ul > li:hover .subNav1:hover{
+    background-color: #72B384;
+} */
+
+
+
+/* Footer */
+
+footer{
+
+    background-image: linear-gradient(to top, #1b7340, #2e7f4c, #3f8b58, #4f9765, #5ea372, #6eae7e, #7db88a, #8cc397, #9fcfa6, #b1dcb5, #c4e8c5, #d6f5d5);
+    /* height: 7rem; */
+    border-radius: 0.5rem;
+    grid-area: footer;
+}
+
+.contactoLink  {
+
+/* margin-top: 2rem; */
+margin-left: 2rem;
+padding-top: 3rem;
+
+}
+
+.contactoLink a {
+
+    color: white;
+    text-decoration: none;
+}
+
+.rrss {
+
+    text-align: right;
+    margin-right: 1rem;
+    padding-bottom: 2rem;
+    
+}
+
+.rrss button {
+    padding: 0.4rem;
+    border-radius: 5%;
+}
+
+.rrss button:hover{
+    background-color: #72B384;
+}
+
+.rrss button a {
+
+    text-decoration: none;
+    color: #1B7340;
+    font-weight: bold;
+}
+
+
+/* INDEX */
+
+/* Sección principal */
+
+
+.artVideo{
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center; */
+}
+
+/* .rrr{
+    width: 60%;
+} */
+
+.section__indexArticle{
+    font-size: 1em;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    /* grid-area: article; */
+    
+}
+
+.indexImage2{
+    margin-top: 4rem;
+}
+
+.index2{
+    /* grid-area: article2; */
+}
+
+.section__indexArticle h2 {
+    font-size: 1.5em;
+    color: #1B7340;
+}
+
+.textoArticulo {
+
+    margin-bottom: 0.5rem;
+    line-height: 2.5em;
+    text-align: justify;
+    display: inline-block;
+    width: 100%;
+    
+}
+
+main section aside {
+
+    margin-top: 3.5rem;
+}
+
+.text2{
+    line-height: 2.5em;
+}
+
+.text2 p{
+    text-align: justify;
+
+}
+
+.picture2Index{
+    margin-right: 1.5rem;
+    margin-top: 4rem;
+}
+
+.text2 h2{
+    color: #1B7340;
+
+}
+
+/* Beneficios */
+
+.tablaPrueba {
+    margin-top: 2rem;
+    border-radius: 0.5rem;
+    border-collapse: collapse;
+    border: #1B7340 3px solid;
+    background-color: #D6F5D5;
+}
+
+
+
+
+main article div picture {
+
+    width:  25vw;
+    height: 20vh;
+    border-radius: 0.3rem;
+    max-width: 200px;
+    box-sizing: border-box;
+    
+}
+
+/* formato sidebar contratos destacados*/
+
+.sidebar{
+    margin-left: 2rem;
+    box-sizing: border-box;
+    display: inline-block;
+    background-color: rgba(250, 249, 249, 0.965);
+    padding: 1rem;
+    border-radius: 3px;
+    height: 70%;
+    grid-area: aside;
+    /* position: sticky; */
+}
+
+.sidebar:hover{
+    background-color: #D6F5D5;
+    transform: scale(1.1,1.1);
+}
+
+.sidebar h3{
+    
+    color: #1B7340;
+    font-weight: bold;
+    text-align: center;
+}
+
+.sidebar div dl dt a {
+
+    text-decoration: none;
+    color: #1B7340;
+    font-weight: bold;
+}
+
+.conDest {
+
+    padding: 1rem;
+}
+
+.conDest dt {
+
+    padding: 0.5rem;
+}
+
+/* NOSOTROS */
+
+/* Mision, Vision, Valores */
+
+.nosotros h2 {
+
+    color: #1B7340;
+    font-size: 1.5em;
+    margin: 1em;
+}
+.nosotros p{
+
+    line-height: 2rem;
+    padding: 1rem;
+    text-align: justify;
+}
+/* main section  */
+article picture img {
+
+    /* width: 13vw; */
+    height: 20vh;
+    margin-bottom: 3rem;
+    margin-left: 0.1rem;
+    margin-right: 3rem;
+    box-sizing: border-box;
+    
+}
+
+
+.artText2{
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.rrr1{
+    width: 60%;
+}
+
+.articleGrid1{
+    grid-area: article;
+}
+
+.articleGrid2{
+    grid-area: article2;
+}
+
+.articleGrid3{
+    grid-area: article3;
+}
+
+/* VENDER */
+
+/* Info de la sección y avisos de venta */
+
+.titulos {
+
+    color: #1B7340;
+    margin: 0.5rem;
+    font-size: 1.5em;
+}
+
+.articuloVender p {
+
+    line-height: 2rem;
+}
+
+.tableGeneric{
+    margin-top: 2rem;
+    border-radius: 0.5rem;
+    border-collapse: collapse;
+    border: #1B7340 3px solid;
+    background-color: #D6F5D5;
+}
+
+
+iframe {
+
+    width: 18vw;
+    height: 25vh;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 1.5rem;
+    border-radius: 3px;
+}
+
+.avisosVenta    {
+
+    color: #1B7340;
+    font-size: 1.5em;
+    margin-bottom: 1.5rem;
+    margin-left: 1rem;
+}
+
+article table {
+
+    border-radius: 0.3rem;
+    margin-left: 1rem;
+}
+
+.tablaVendedores th {
+
+    color: #1B7340;
+    font-weight: bold;
+    padding: 1rem;
+}    
+
+article table tr td {
+
+ padding: 1rem;
+
+}
+
+.sectionGen2 {
+    display: flex;
+    align-items: center;
+    text-align: justify;
+}
+
+.genArticle {
+    width: 55%;
+}
+
+/* Formulario de venta */
+
+.sidebar1{
+    grid-area: aside;
+}
+
+.formulario1:hover{
+    background-color: #D6F5D5;
+}
+
+.formulario1 {
+    padding: 1rem;
+}
+
+
+main section aside form div {
+
+    margin: 1em;
+}
+
+.tituloForm {
+    color: #1B7340;
+    margin-bottom: 1.5rem;
+}
+
+.segundoForm{
+    color: #1B7340;
+}
+
+.sectionGen {
+    display: flex;
+}
+
+.generic1{
+    width: 70%;
+}
+
+.elemento{
+    width: 100%;
+}
+
+/* COMPRAR */
+
+/* Info de la sección y avisos de compra */
+
+.tablaCompradores th {
+
+    color: #1B7340;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.tituloComprar {
+    font-size: 1.5em;
+    margin: 0.5rem;   
+}
+.articuloComprar p {
+
+    line-height: 2em;
+}
+
+/* CONTACTO */
+
+/* Formulario de contacto */
+
+.formularioContacto {
+
+    color: #1B7340;
+    margin: 10px;
+}
+
+main section form div {
+
+    margin: 10px;
+
+}
+
+.consultaForm{
+    color: #1B7340;
+}
+
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 1230px) {
+
+    .artVideo{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: stretch;
+    }
+    
+    .rrr{
+        width: 100%;
+    }
+
+    iframe{
+        width: 40vw;
+        height: 30vh;
+    }
+}
+
+@media only screen and (max-width: 902px) {
+    body{
+        font-family: 'Urbanist', sans-serif;
+        background-color: rgba(250, 249, 249, 0.965);
+        margin: 0 0.5rem;
+        padding: 0 1rem;
+        width: 100%;
+        overflow-x: hidden;
+        display: grid;
+        grid-template-areas: 
+        "header1"
+        "article"
+        "article2"
+        "article3"
+        "aside"
+        "footer";
+        grid-template-rows: 30vh auto auto auto auto 13vh;
+        grid-template-columns: 1fr;
+        row-gap: 2rem;
+        
+        justify-content: stretch;
+    }
+
+    header{
+        height: 45vh;
+    }
+
+    .nav1{
+        font-size: 0.5em;
+    }
+    .firstArticle1{
+        margin-top: 10rem;
+    }
+
+    iframe{
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 685px) {
+    .nav2{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 0.2rem;
+        padding-right: 0.3rem;
+    }
+}
+
+/* Animaciones */
+
+@keyframes fadeLogo{
+    0%{
+        opacity: 0;
+    }
+    90%{
+        opacity: 1;
+    }
+}
